@@ -6,7 +6,7 @@ import Markdown from "react-markdown";
 import toast from "react-hot-toast";
 import { useAuth } from "@clerk/clerk-react";
 
-const VITE_BASE_URL = "http://localhost:3000";
+const VITE_BASE_URL = "https://desi-ai-server1.onrender.com";
 
 const BlogTitles = () => {
   const blogCategories = [
