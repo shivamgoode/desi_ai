@@ -6,6 +6,7 @@ const ReviewResume = () => {
   const [file, setFile] = useState(null);
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
+  const vite_url = "https://desi-ai-server1.onrender.com"
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
@@ -23,7 +24,7 @@ const ReviewResume = () => {
       formData.append("resume", file); // MUST match backend key
 
       const { data } = await axios.post(
-        "https://desi-ai-server1.onrender.com/api/ai/resume-review",
+        "${vite_url}/api/ai/resume-review",
         formData,
         {
           headers: {
