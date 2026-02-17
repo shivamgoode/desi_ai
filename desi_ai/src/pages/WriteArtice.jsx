@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 import Markdown from "react-markdown";
 
 //axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
-const VITE_BASE_URL = "http://localhost:3000";
+const VITE_BASE_URL = "https://desi-ai-server1.onrender.com";
 
 const WriteArtice = () => {
   const artcleLength = [
