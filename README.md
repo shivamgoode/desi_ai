@@ -51,5 +51,5 @@ Built with React (Frontend) and Node.js + Express (Backend), Desi_AI integrates 
 
 ---
 
-## 📂 Project Structure
+
 
