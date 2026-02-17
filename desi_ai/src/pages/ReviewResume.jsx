@@ -23,7 +23,7 @@ const ReviewResume = () => {
       formData.append("resume", file); // MUST match backend key
 
       const { data } = await axios.post(
-        "http://localhost:3000/api/ai/resume-review",
+        "https://desi-ai-server1.onrender.com/api/ai/resume-review",
         formData,
         {
           headers: {
