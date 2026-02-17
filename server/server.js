@@ -15,7 +15,7 @@ await connectCloudinary();
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // frontend URL
+    origin: "https://desi-ai-g3j7.onrender.com", // frontend URL
     credentials: true,
   }),
 );
