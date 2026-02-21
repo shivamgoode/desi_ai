@@ -13,7 +13,7 @@ console.log("GROQ KEY LOADED:", !!process.env.GROQ_API_KEY);
 
 await connectCloudinary();
 
-import cors from "cors";
+
 
 app.use(cors({
   origin: "*", // for testing
