@@ -13,12 +13,12 @@ console.log("GROQ KEY LOADED:", !!process.env.GROQ_API_KEY);
 
 await connectCloudinary();
 
-app.use(
-  cors({
-    origin: "https://desi-ai-g3j7.onrender.com", // frontend URL
-    credentials: true,
-  }),
-);
+import cors from "cors";
+
+app.use(cors({
+  origin: "*", // for testing
+  methods: ["GET", "POST", "PUT", "DELETE"]
+}));
 app.use(express.json());
 app.use(clerkMiddleware());
 
